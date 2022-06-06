@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <link rel="stylesheet" href="styles.css" type="text/css"/>
+  </head>
+  <body>
+    <div class="popup-container">
+        <img src="assets/mschf-logo.svg" class="logo"/>
+
+      <main class="main">
+        <header class="header">
+          <a target="_blank" href="https://cooooookies.com/#faq">FAQ</a>
+          <a target="_blank" href="https://cooooookies.com/terms-and-conditions.pdf">Terms & Conditions</a>
+        </header>
+
+        <section class="browser-frame logo-frame">
+          <header class="heading">
+            <div class="left">
+              <span id="countdown-wrapper">Game ends in <span id="countdown"></span></span>
+            </div>
+            <div class="right">
+              <span class="circle"></span>
+              <span class="circle"></span>
+              <span class="circle"></span>
+            </div>
+          </header>
+          <div class="content padded">
+            <img src="assets/logo.png" alt="">
+          </div>
+        </section>
+
+        <div id="loading-box">
+          Loading
+        </div>
+
+        
+        <form id="signup-form" class="hidden">
+          <fieldset>
+            <label class="input-label" data-target="email">
+              <span class="input-label-title">Email</span>
+              <input type="email" placeholder="Enter your email" name="email" autocomplete="off" required>
+              <p class="input-label-description">This is how we will contact you if you win, so use a real one</p>
+            </label>
+
+            <label class="input-label" data-target="username">
+              <span class="input-label-title">Username</span>
+              <input type="text" placeholder="Create a username" autocomplete="off" name="username" required>
+            </label>
+
+            <button class="btn" type="submit">Join Game</button>
+          </fieldset>
+        </form>
+
+
+        <div id="cookie-tracker" class="hidden">
+
+          <div class="tab-headings">
+            <button class="tab-headings-btn active" data-target="personal">
+              Your Cookies
+              <span class="line"></span>
+            </button>
+
+            <button class="tab-headings-btn" data-target="leaderboard">
+              Leaderboard
+              <span class="line"></span>
+            </button>
+          </div>
+
+          <section class="browser-frame personal-frame">
+            <header class="heading">
+              <div class="left">
+                <span></span>
+              </div>
+              <div class="right">
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+              </div>
+            </header>
+            <div class="content chart" id="personal-chart">
+              <div class="chart-header">
+                <span class="chart-header-top">Cookies accepted:</span>
+                <span class="chart-header-score">1,234</span>
+                <img src="assets/cookiemonster.gif" alt=""/>
+              </div>
+              <div class="banner chart-banner hidden"></div>
+              <div class="chart-content">
+              </div>
+            </div>
+          </section>
+
+          <section class="browser-frame leaderboard-frame hidden">
+            <header class="heading">
+              <div class="left">
+                <span>Leaderboard</span>
+              </div>
+              <div class="right">
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+              </div>
+            </header>
+            <div class="banner leaderboard-banner hidden"></div>
+            <div class="content padded" id="leaderboard">
+            </div>
+          </section>
+          
+        </div>
+      </main>
+
+      <footer class="footer">
+        <p>NOTE: Ad block must be turned off in<br/>order to track cookies</p>
+      </footer>
+    </div>
+  </body>
+  <script src="popup.js"></script>
+</html>
