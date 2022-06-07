@@ -1,9 +1,9 @@
 import requests, json, math as m, random as r, re, os, time
 from datetime import datetime as dt
 
-extId = "jmefjmlobkemlikbiejhgdnjadikapcn"
+extId = "[PLACEHOLDER]"
 url = "https://hb8ausjesa.execute-api.us-east-1.amazonaws.com/dev"
-myToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IndlbHAsLCwiLCJpcCI6IjQ1LjE0NC4xMTMuMTM5IiwiaWF0IjoxNjE5NTY0NjQ5LCJleHAiOjE2MjIxNTY2NDl9.S75h6R8nCORckokZ21UUE-ZIUjU3fRngKMrtIwER7xI"
+myToken = "[PLACEHOLDER]"
 
 def main():
     while True:
